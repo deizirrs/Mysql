@@ -30,6 +30,11 @@ DELETE FROM colaboradores where id = 9;
 DELETE FROM colaboradores where id = 10;
 DELETE FROM colaboradores where id = 11;
 
+SELECT * FROM colaboradores WHERE salario > 2000;
+
+SELECT * FROM colaboradores WHERE salario < 2000;
+
+
   
   
 
