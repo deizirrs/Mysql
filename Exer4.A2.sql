@@ -38,6 +38,14 @@ INSERT INTO tb_produtos (nome, descricao, peso, preco, categoria_id) VALUES ("Sa
 
 SELECT * FROM tb_produtos;
 
+SELECT * FROM tb_produtos WHERE preco BETWEEN 50.00 AND 150.00;
+
+SELECT * FROM tb_produtos WHERE nome LIKE "%C%";
+
+SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categoria_id = tb_categorias.id;
+
+SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_produtos.categoria_id = tb_categorias.id WHERE tb_categorias.nome = "Carne";
+
 
 
 
